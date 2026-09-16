@@ -35,3 +35,13 @@ npm run preview   # or: node .output/server/index.mjs
 npm run generate
 npm run preview   # serves .output/public
 ```
+
+## TODO:
+- add Volta with node and npm version
+- update readme
+- check assets
+- split code
+- add vs settings
+- add linter
+- add prettier
+- set navigation logic
