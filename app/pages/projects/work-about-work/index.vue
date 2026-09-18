@@ -1045,7 +1045,9 @@ interface WorkAboutWorkWindow extends Window {
 }
 
 onMounted(() => {
-    const workWindow = window as WorkAboutWorkWindow
+    // window does not have these custom properties in the standard Window type yet
+    // so we intentionally cast through unknown.
+    const workWindow = window as unknown as WorkAboutWorkWindow
 
     // Expose to window so the inline onclick/oninput/onchange attributes
     // in the template above (kept as-is from the original static HTML)
