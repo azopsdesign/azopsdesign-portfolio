@@ -1,12 +1,20 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2026-09-16',
+    devtools: { enabled: true },
 
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en'
-      }
-    }
-  }
+    // "forced" typescript checks | very strict mode
+    typescript: {
+        typeCheck: true,
+    },
+
+    modules: ['@nuxt/eslint'],
+
+    app: {
+        head: {
+            htmlAttrs: {
+                lang: 'en',
+            },
+        },
+    },
+
+    compatibilityDate: '2026-09-16',
 })
