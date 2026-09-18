@@ -1,25 +1,20 @@
 export default defineNuxtConfig({
-  
-  devtools: { enabled: true },
+    devtools: { enabled: true },
 
     // "forced" typescript checks | very strict mode
-  typescript: {
-      typeCheck: true,
-  },
+    typescript: {
+        typeCheck: true,
+    },
 
-    modules: [
-        '@nuxt/eslint',
-    ],
+    modules: ['@nuxt/eslint'],
 
+    app: {
+        head: {
+            htmlAttrs: {
+                lang: 'en',
+            },
+        },
+    },
 
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en'
-      }
-    }
-  },
-
-   compatibilityDate: '2026-09-16',
-
+    compatibilityDate: '2026-09-16',
 })

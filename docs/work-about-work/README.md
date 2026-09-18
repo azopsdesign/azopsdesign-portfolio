@@ -1,4 +1,5 @@
 # Work About Work
+
 ### A process diagnostic tool for coordination overhead in knowledge-work teams
 
 **[Run the tool](https://workaboutwork.netlify.app/)** · [Read the article](https://youthful-weaver-67b.notion.site/Work-About-Work-Is-a-Process-Defect-30590b86ee6780bcbd42e64c5156a8d6)
@@ -26,7 +27,7 @@ This tool makes that visible in 60 seconds, and identifies where in the system t
 The calculator is grounded in published research:
 
 - **Baseline:** Microsoft 365 telemetry and APQC benchmarks across 982 knowledge workers (16.4 hrs/week composite)
-- **Efficiency gains:** Noy and Zhang (MIT) generative AI productivity study; Harvard Business School, *Navigating the Jagged Technological Frontier*
+- **Efficiency gains:** Noy and Zhang (MIT) generative AI productivity study; Harvard Business School, _Navigating the Jagged Technological Frontier_
 - **Reclaim coefficient:** 0.60 — a conservative weighted midpoint across three admin categories (meetings, communications, information retrieval)
 - **Framework:** DMAIC continuous improvement methodology applied to knowledge work coordination
 
@@ -52,14 +53,14 @@ Total time from concept to deployed tool: approximately 20 hours.
 
 The full documentation set is available in the `/docs` folder:
 
-| Document | Purpose |
-|---|---|
-| Framework Document | Intellectual foundation and research grounding |
-| Calculator Methodology Sheet | Full formula chain, assumptions, and stress test responses |
-| Diagnostic Question Bank | Five questions with scoring rationale and sequence logic |
-| Recommendation Logic Map | Nine recommendations with ordering logic and source citations |
-| Input/Output Specification | Complete developer and designer build brief |
-| AI Workflow Methodology | How AI was used in the design, build, and test process |
+| Document                     | Purpose                                                       |
+| ---------------------------- | ------------------------------------------------------------- |
+| Framework Document           | Intellectual foundation and research grounding                |
+| Calculator Methodology Sheet | Full formula chain, assumptions, and stress test responses    |
+| Diagnostic Question Bank     | Five questions with scoring rationale and sequence logic      |
+| Recommendation Logic Map     | Nine recommendations with ordering logic and source citations |
+| Input/Output Specification   | Complete developer and designer build brief                   |
+| AI Workflow Methodology      | How AI was used in the design, build, and test process        |
 
 ---
 
@@ -69,4 +70,4 @@ Open `index.html` in any browser. No install, no login, no build step required.
 
 ---
 
-*Built by [Ales Zordan](https://www.linkedin.com/in/azordan/) · Operations Lead and Systems Thinker*
+_Built by [Ales Zordan](https://www.linkedin.com/in/azordan/) · Operations Lead and Systems Thinker_

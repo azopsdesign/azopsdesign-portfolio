@@ -37,6 +37,7 @@ npm run preview   # serves .output/public
 ```
 
 ## TODO:
+
 - add Volta with node and npm version
 - update readme
 - check assets
