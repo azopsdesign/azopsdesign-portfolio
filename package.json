@@ -19,7 +19,7 @@
         "prettier:fix": "prettier --write --list-different .",
         "check-all": "npm run types:check && npm run lint:check && npm run prettier:check",
         "fix-all": "npm run lint:fix && npm run prettier:fix",
-        "deploy-build": "npm run check-all && npm run generate"
+        "deploy": "npm run check-all && npm run generate"
     },
     "dependencies": {
         "@trivago/prettier-plugin-sort-imports": "^6.0.2",
