@@ -1,6 +1,16 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2026-09-16',
+  
+  devtools: { enabled: true },
+
+    // "forced" typescript checks | very strict mode
+  typescript: {
+      typeCheck: true,
+  },
+
+    modules: [
+        '@nuxt/eslint',
+    ],
+
 
   app: {
     head: {
@@ -8,5 +18,8 @@ export default defineNuxtConfig({
         lang: 'en'
       }
     }
-  }
+  },
+
+   compatibilityDate: '2026-09-16',
+
 })
