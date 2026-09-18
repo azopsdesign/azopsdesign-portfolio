@@ -4,15 +4,15 @@
             <span class="logo">Work About Work</span>
             <div class="mode-tabs">
                 <button
-                    class="mode-tab active"
                     id="tab-calc"
+                    class="mode-tab active"
                     onclick="switchMode('calculator')"
                 >
                     Calculator
                 </button>
                 <button
-                    class="mode-tab"
                     id="tab-audit"
+                    class="mode-tab"
                     onclick="switchMode('audit')"
                 >
                     Audit
@@ -23,7 +23,7 @@
         <!-- ════════════════════════════════════════
          CALCULATOR MODE
          ════════════════════════════════════════ -->
-        <div class="mode-panel active" id="mode-calculator">
+        <div id="mode-calculator" class="mode-panel active">
             <!-- Left: inputs -->
             <div class="panel-left">
                 <div class="panel-left-heading">Your team</div>
@@ -32,19 +32,19 @@
                 <div class="slider-group">
                     <div class="slider-label-row">
                         <span class="slider-label">Team size</span>
-                        <span class="slider-value" id="val-team-size"
+                        <span id="val-team-size" class="slider-value"
                             >25 people</span
                         >
                     </div>
                     <input
-                        type="range"
                         id="sl-team-size"
+                        type="range"
                         min="3"
                         max="500"
                         value="25"
                         step="1"
                         oninput="updateCalc()"
-                    />
+                    >
                     <div class="slider-range-labels">
                         <span>3</span><span>500</span>
                     </div>
@@ -56,19 +56,19 @@
                         <span class="slider-label"
                             >Avg. fully-loaded salary</span
                         >
-                        <span class="slider-value" id="val-avg-salary"
+                        <span id="val-avg-salary" class="slider-value"
                             >€80K / yr</span
                         >
                     </div>
                     <input
-                        type="range"
                         id="sl-avg-salary"
+                        type="range"
                         min="30000"
                         max="300000"
                         value="80000"
                         step="5000"
                         oninput="updateCalc()"
-                    />
+                    >
                     <div class="slider-range-labels">
                         <span>€30K</span><span>€300K</span>
                     </div>
@@ -80,19 +80,19 @@
                         <span class="slider-label"
                             >Admin &amp; coordination load</span
                         >
-                        <span class="slider-value" id="val-admin-hrs"
+                        <span id="val-admin-hrs" class="slider-value"
                             >14 hrs / week</span
                         >
                     </div>
                     <input
-                        type="range"
                         id="sl-admin-hrs"
+                        type="range"
                         min="2"
                         max="28"
                         value="14"
                         step="1"
                         oninput="updateCalc()"
-                    />
+                    >
                     <div class="slider-range-labels">
                         <span>2 hrs</span><span>28 hrs</span>
                     </div>
@@ -104,19 +104,19 @@
                         <span class="slider-label"
                             >AI workflow adoption rate</span
                         >
-                        <span class="slider-value" id="val-adoption-pct"
+                        <span id="val-adoption-pct" class="slider-value"
                             >50% of team</span
                         >
                     </div>
                     <input
-                        type="range"
                         id="sl-adoption-pct"
+                        type="range"
                         min="0"
                         max="100"
                         value="50"
                         step="1"
                         oninput="updateCalc()"
-                    />
+                    >
                     <div class="slider-range-labels">
                         <span>0%</span><span>100%</span>
                     </div>
@@ -139,18 +139,18 @@
                     <div class="output-eyebrow">
                         Annual cost of coordination overhead
                     </div>
-                    <div class="headline-value" id="out-admin-cost">€700K</div>
+                    <div id="out-admin-cost" class="headline-value">€700K</div>
                 </div>
 
-                <hr class="rule" />
+                <hr class="rule" >
 
                 <!-- 2x2 metric grid -->
                 <div class="metric-grid">
                     <div class="metric-cell">
                         <div class="metric-cell-label">Hours lost per year</div>
                         <div
-                            class="metric-cell-value cost-val"
                             id="out-admin-hours"
+                            class="metric-cell-value cost-val"
                         >
                             16.8K
                         </div>
@@ -163,8 +163,8 @@
                             Hours per person / week
                         </div>
                         <div
-                            class="metric-cell-value cost-val"
                             id="out-hours-pp-week"
+                            class="metric-cell-value cost-val"
                         >
                             14.0
                         </div>
@@ -177,8 +177,8 @@
                             Reclaimable hours / yr
                         </div>
                         <div
-                            class="metric-cell-value reclaim-val"
                             id="out-reclaim-hours"
+                            class="metric-cell-value reclaim-val"
                         >
                             5.0K
                         </div>
@@ -191,8 +191,8 @@
                             Value of reclaimed capacity
                         </div>
                         <div
-                            class="metric-cell-value reclaim-val"
                             id="out-reclaim-cost"
+                            class="metric-cell-value reclaim-val"
                         >
                             €210K
                         </div>
@@ -206,7 +206,7 @@
                 <div class="bar-section">
                     <div class="bar-label-row">
                         <span class="bar-label">Admin load severity</span>
-                        <span class="bar-right-label" id="bar-admin-label"
+                        <span id="bar-admin-label" class="bar-right-label"
                             >14 hrs / week</span
                         >
                     </div>
@@ -215,7 +215,7 @@
                             id="bar-admin-fill"
                             class="bar-fill bar-magenta"
                             style="width: 50%"
-                        ></div>
+                        />
                     </div>
                 </div>
 
@@ -223,7 +223,7 @@
                 <div class="bar-section">
                     <div class="bar-label-row">
                         <span class="bar-label">AI reclaim potential</span>
-                        <span class="bar-right-label" id="bar-adopt-label"
+                        <span id="bar-adopt-label" class="bar-right-label"
                             >50%</span
                         >
                     </div>
@@ -232,7 +232,7 @@
                             id="bar-adopt-fill"
                             class="bar-fill bar-green"
                             style="width: 50%"
-                        ></div>
+                        />
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@
         <!-- ════════════════════════════════════════
          AUDIT MODE
          ════════════════════════════════════════ -->
-        <div class="mode-panel" id="mode-audit">
+        <div id="mode-audit" class="mode-panel">
             <!-- Left: info + live score -->
             <div class="panel-left">
                 <div class="audit-info-heading">Diagnostic Audit</div>
@@ -278,8 +278,8 @@
 
                 <div class="live-score-box">
                     <div class="live-score-label">Process Defect Score</div>
-                    <div class="live-score-number" id="live-score-val">—</div>
-                    <div class="live-score-band" id="live-score-band">
+                    <div id="live-score-val" class="live-score-number">—</div>
+                    <div id="live-score-band" class="live-score-band">
                         Answer the questions to see your score
                     </div>
                 </div>
@@ -307,36 +307,36 @@
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
+                                    id="q1-0"
                                     type="radio"
                                     name="q1"
-                                    id="q1-0"
                                     value="0"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q1-0"
                                     >Deep work sessions or workshops</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q1-1"
                                     type="radio"
                                     name="q1"
-                                    id="q1-1"
                                     value="1"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q1-1"
                                     >Decision-making with clear owners</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q1-2"
                                     type="radio"
                                     name="q1"
-                                    id="q1-2"
                                     value="2"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q1-2"
                                     >Alignment meetings: getting everyone on the
                                     same page</label
@@ -344,12 +344,12 @@
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q1-3"
                                     type="radio"
                                     name="q1"
-                                    id="q1-3"
                                     value="3"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q1-3"
                                     >Status updates: reporting what
                                     happened</label
@@ -368,48 +368,48 @@
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
+                                    id="q2-0"
                                     type="radio"
                                     name="q2"
-                                    id="q2-0"
                                     value="0"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q2-0"
                                     >Always: it's a team norm</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q2-1"
                                     type="radio"
                                     name="q2"
-                                    id="q2-1"
                                     value="1"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q2-1"
                                     >Usually, but not consistently</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q2-2"
                                     type="radio"
                                     name="q2"
-                                    id="q2-2"
                                     value="2"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q2-2"
                                     >Sometimes: for big meetings only</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q2-3"
                                     type="radio"
                                     name="q2"
-                                    id="q2-3"
                                     value="3"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q2-3"
                                     >Almost never</label
                                 >
@@ -427,12 +427,12 @@
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
+                                    id="q3-0"
                                     type="radio"
                                     name="q3"
-                                    id="q3-0"
                                     value="0"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q3-0"
                                     >No: the live discussion adds real
                                     value</label
@@ -440,36 +440,36 @@
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q3-1"
                                     type="radio"
                                     name="q3"
-                                    id="q3-1"
                                     value="1"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q3-1"
                                     >Some, but not most</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q3-2"
                                     type="radio"
                                     name="q3"
-                                    id="q3-2"
                                     value="2"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q3-2"
                                     >Probably most of them</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q3-3"
                                     type="radio"
                                     name="q3"
-                                    id="q3-3"
                                     value="3"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q3-3"
                                     >Yes, almost all of them</label
                                 >
@@ -489,12 +489,12 @@
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
+                                    id="q4-0"
                                     type="radio"
                                     name="q4"
-                                    id="q4-0"
                                     value="0"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q4-0"
                                     >Almost always: we have a clear
                                     system</label
@@ -502,12 +502,12 @@
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q4-1"
                                     type="radio"
                                     name="q4"
-                                    id="q4-1"
                                     value="1"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q4-1"
                                     >Usually, but follow-through is
                                     inconsistent</label
@@ -515,24 +515,24 @@
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q4-2"
                                     type="radio"
                                     name="q4"
-                                    id="q4-2"
                                     value="2"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q4-2"
                                     >Sometimes: varies by meeting</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q4-3"
                                     type="radio"
                                     name="q4"
-                                    id="q4-3"
                                     value="3"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q4-3"
                                     >Rarely: things feel discussed but not
                                     decided</label
@@ -553,12 +553,12 @@
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
+                                    id="q5-0"
                                     type="radio"
                                     name="q5"
-                                    id="q5-0"
                                     value="0"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q5-0"
                                     >We have consistent team-wide AI
                                     workflows</label
@@ -566,12 +566,12 @@
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q5-1"
                                     type="radio"
                                     name="q5"
-                                    id="q5-1"
                                     value="1"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q5-1"
                                     >We have some shared workflows but no
                                     system</label
@@ -579,24 +579,24 @@
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q5-2"
                                     type="radio"
                                     name="q5"
-                                    id="q5-2"
                                     value="2"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q5-2"
                                     >A few individuals are experimenting</label
                                 >
                             </li>
                             <li class="option-item">
                                 <input
+                                    id="q5-3"
                                     type="radio"
                                     name="q5"
-                                    id="q5-3"
                                     value="3"
                                     onchange="updateAudit()"
-                                />
+                                >
                                 <label class="option-label" for="q5-3"
                                     >We are not using AI for this at all</label
                                 >
@@ -605,21 +605,21 @@
                     </div>
 
                     <!-- Score result (revealed when all 5 answered) -->
-                    <div class="score-result" id="score-result">
-                        <div class="result-eyebrow" id="res-eyebrow"></div>
-                        <div class="result-title" id="res-title"></div>
+                    <div id="score-result" class="score-result">
+                        <div id="res-eyebrow" class="result-eyebrow"/>
+                        <div id="res-title" class="result-title"/>
                         <div
-                            class="result-score-line"
                             id="res-score-line"
-                        ></div>
+                            class="result-score-line"
+                        />
                         <div
-                            class="result-description"
                             id="res-description"
-                        ></div>
+                            class="result-description"
+                        />
                         <div class="recs-header">
                             Your three recommendations
                         </div>
-                        <div id="res-recs"></div>
+                        <div id="res-recs"/>
                     </div>
                 </div>
             </div>
