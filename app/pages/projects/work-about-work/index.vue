@@ -51,7 +51,7 @@
                         value="25"
                         step="1"
                         oninput="updateCalc()"
-                    >
+                    />
 
                     <div class="slider-range-labels">
                         <span>3</span><span>500</span>
@@ -79,7 +79,7 @@
                         value="80000"
                         step="5000"
                         oninput="updateCalc()"
-                    >
+                    />
 
                     <div class="slider-range-labels">
                         <span>€30K</span><span>€300K</span>
@@ -107,7 +107,7 @@
                         value="14"
                         step="1"
                         oninput="updateCalc()"
-                    >
+                    />
 
                     <div class="slider-range-labels">
                         <span>2 hrs</span><span>28 hrs</span>
@@ -135,7 +135,7 @@
                         value="50"
                         step="1"
                         oninput="updateCalc()"
-                    >
+                    />
 
                     <div class="slider-range-labels">
                         <span>0%</span><span>100%</span>
@@ -143,8 +143,8 @@
                 </div>
 
                 <div class="cta-block">
-                    Want to understand <em>where</em> your coordination
-                    overhead comes from?
+                    Want to understand <em>where</em> your coordination overhead
+                    comes from?
 
                     <a onclick="switchMode('audit')">
                         Run the 5-question audit
@@ -166,15 +166,13 @@
                     <div id="out-admin-cost" class="headline-value">€700K</div>
                 </div>
 
-                <hr class="rule" >
+                <hr class="rule" />
 
                 <!-- 2x2 metric grid -->
 
                 <div class="metric-grid">
                     <div class="metric-cell">
-                        <div class="metric-cell-label">
-                            Hours lost per year
-                        </div>
+                        <div class="metric-cell-label">Hours lost per year</div>
 
                         <div
                             id="out-admin-hours"
@@ -305,35 +303,25 @@
 
                 <p
                     class="audit-intro-text"
-                    style="
-                        font-weight: 700;
-                        color: #111;
-                        margin-bottom: 8px;
-                    "
+                    style="font-weight: 700; color: #111; margin-bottom: 8px"
                 >
                     Score bands:
                 </p>
 
                 <div class="band-indicator">
-                    <span class="band-chip chip-high">
-                        High Risk 10–15
-                    </span>
+                    <span class="band-chip chip-high"> High Risk 10–15 </span>
 
                     <span>Systemic redesign required.</span>
                 </div>
 
                 <div class="band-indicator">
-                    <span class="band-chip chip-moderate">
-                        Moderate 5–9
-                    </span>
+                    <span class="band-chip chip-moderate"> Moderate 5–9 </span>
 
                     <span>Targeted fixes in 2–3 dimensions.</span>
                 </div>
 
                 <div class="band-indicator">
-                    <span class="band-chip chip-healthy">
-                        Healthy 0–4
-                    </span>
+                    <span class="band-chip chip-healthy"> Healthy 0–4 </span>
 
                     <span>Optimise and protect what's working.</span>
                 </div>
@@ -366,9 +354,7 @@
                     <!-- Q1 -->
 
                     <div class="question-block">
-                        <div class="question-meta">
-                            Q1 — Meeting Design
-                        </div>
+                        <div class="question-meta">Q1 — Meeting Design</div>
 
                         <div class="question-text">
                             What best describes the majority of your team's
@@ -383,7 +369,7 @@
                                     name="q1"
                                     value="0"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q1-0">
                                     Deep work sessions or workshops
@@ -397,7 +383,7 @@
                                     name="q1"
                                     value="1"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q1-1">
                                     Decision-making with clear owners
@@ -411,7 +397,7 @@
                                     name="q1"
                                     value="2"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q1-2">
                                     Alignment meetings: getting everyone on the
@@ -426,7 +412,7 @@
                                     name="q1"
                                     value="3"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q1-3">
                                     Status updates: reporting what happened
@@ -438,9 +424,7 @@
                     <!-- Q2 -->
 
                     <div class="question-block">
-                        <div class="question-meta">
-                            Q2 — Meeting Structure
-                        </div>
+                        <div class="question-meta">Q2 — Meeting Structure</div>
 
                         <div class="question-text">
                             How often do meetings have a written agenda shared
@@ -455,7 +439,7 @@
                                     name="q2"
                                     value="0"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q2-0">
                                     Always: it's a team norm
@@ -469,7 +453,7 @@
                                     name="q2"
                                     value="1"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q2-1">
                                     Usually, but not consistently
@@ -483,7 +467,7 @@
                                     name="q2"
                                     value="2"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q2-2">
                                     Sometimes: for big meetings only
@@ -497,7 +481,7 @@
                                     name="q2"
                                     value="3"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q2-3">
                                     Almost never
@@ -509,9 +493,7 @@
                     <!-- Q3 -->
 
                     <div class="question-block">
-                        <div class="question-meta">
-                            Q3 — Async Maturity
-                        </div>
+                        <div class="question-meta">Q3 — Async Maturity</div>
 
                         <div class="question-text">
                             Could the majority of your information-sharing
@@ -526,7 +508,7 @@
                                     name="q3"
                                     value="0"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q3-0">
                                     No: the live discussion adds real value
@@ -540,7 +522,7 @@
                                     name="q3"
                                     value="1"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q3-1">
                                     Some, but not most
@@ -554,7 +536,7 @@
                                     name="q3"
                                     value="2"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q3-2">
                                     Probably most of them
@@ -568,7 +550,7 @@
                                     name="q3"
                                     value="3"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q3-3">
                                     Yes, almost all of them
@@ -597,7 +579,7 @@
                                     name="q4"
                                     value="0"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q4-0">
                                     Almost always: we have a clear system
@@ -611,7 +593,7 @@
                                     name="q4"
                                     value="1"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q4-1">
                                     Usually, but follow-through is inconsistent
@@ -625,7 +607,7 @@
                                     name="q4"
                                     value="2"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q4-2">
                                     Sometimes: varies by meeting
@@ -639,7 +621,7 @@
                                     name="q4"
                                     value="3"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q4-3">
                                     Rarely: things feel discussed but not
@@ -669,7 +651,7 @@
                                     name="q5"
                                     value="0"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q5-0">
                                     We have consistent team-wide AI workflows
@@ -683,7 +665,7 @@
                                     name="q5"
                                     value="1"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q5-1">
                                     We have some shared workflows but no system
@@ -697,7 +679,7 @@
                                     name="q5"
                                     value="2"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q5-2">
                                     A few individuals are experimenting
@@ -711,7 +693,7 @@
                                     name="q5"
                                     value="3"
                                     onchange="updateAudit()"
-                                >
+                                />
 
                                 <label class="option-label" for="q5-3">
                                     We are not using AI for this at all
@@ -723,25 +705,19 @@
                     <!-- Score result (revealed when all 5 answered) -->
 
                     <div id="score-result" class="score-result">
-                        <div id="res-eyebrow" class="result-eyebrow"/>
+                        <div id="res-eyebrow" class="result-eyebrow" />
 
-                        <div id="res-title" class="result-title"/>
+                        <div id="res-title" class="result-title" />
 
-                        <div
-                            id="res-score-line"
-                            class="result-score-line"
-                        />
+                        <div id="res-score-line" class="result-score-line" />
 
-                        <div
-                            id="res-description"
-                            class="result-description"
-                        />
+                        <div id="res-description" class="result-description" />
 
                         <div class="recs-header">
                             Your three recommendations
                         </div>
 
-                        <div id="res-recs"/>
+                        <div id="res-recs" />
                     </div>
                 </div>
             </div>
@@ -773,21 +749,17 @@ function fmtHours(v: number): string {
 }
 
 function updateCalc(): void {
-    const ts = +(
-        document.getElementById('sl-team-size') as HTMLInputElement
-    ).value
+    const ts = +(document.getElementById('sl-team-size') as HTMLInputElement)
+        .value
 
-    const sal = +(
-        document.getElementById('sl-avg-salary') as HTMLInputElement
-    ).value
+    const sal = +(document.getElementById('sl-avg-salary') as HTMLInputElement)
+        .value
 
-    const ah = +(
-        document.getElementById('sl-admin-hrs') as HTMLInputElement
-    ).value
+    const ah = +(document.getElementById('sl-admin-hrs') as HTMLInputElement)
+        .value
 
-    const ap = +(
-        document.getElementById('sl-adoption-pct') as HTMLInputElement
-    ).value
+    const ap = +(document.getElementById('sl-adoption-pct') as HTMLInputElement)
+        .value
 
     // Slider display values
 
@@ -845,9 +817,7 @@ function updateCalc(): void {
 
     const adminBarW = Math.min((adminPct / 70) * 100, 100)
 
-    const adminFill = document.getElementById(
-        'bar-admin-fill',
-    ) as HTMLElement
+    const adminFill = document.getElementById('bar-admin-fill') as HTMLElement
 
     adminFill.style.width = adminBarW + '%'
 
@@ -858,9 +828,8 @@ function updateCalc(): void {
 
     document.getElementById('bar-adopt-label')!.textContent = ap + '%'
 
-    ;(
-        document.getElementById('bar-adopt-fill') as HTMLElement
-    ).style.width = ap + '%'
+    ;(document.getElementById('bar-adopt-fill') as HTMLElement).style.width =
+        ap + '%'
 }
 
 // ════════════════════════════════
@@ -946,7 +915,7 @@ const RECS: Record<'high' | 'moderate' | 'healthy', RecBand> = {
 
 function getQ(name: string): number | null {
     const el = document.querySelector<HTMLInputElement>(
-        'input[name="' + name + '"]:checked',
+        'input[name="' + name + '"]:checked'
     )
 
     return el ? +el.value : null
@@ -955,9 +924,7 @@ function getQ(name: string): number | null {
 function updateAudit(): void {
     const scores = ['q1', 'q2', 'q3', 'q4', 'q5'].map(getQ)
 
-    const filled = scores.filter(
-        (s): s is number => s !== null,
-    )
+    const filled = scores.filter((s): s is number => s !== null)
 
     const total = filled.reduce((a, b) => a + b, 0)
 
@@ -1003,15 +970,12 @@ function updateAudit(): void {
 
     // Live score number colour
 
-    ;(
-        document.getElementById('live-score-val') as HTMLElement
-    ).style.color = bandColor
+    ;(document.getElementById('live-score-val') as HTMLElement).style.color =
+        bandColor
 
     // Banner label + title
 
-    const resEyebrow = document.getElementById(
-        'res-eyebrow',
-    ) as HTMLElement
+    const resEyebrow = document.getElementById('res-eyebrow') as HTMLElement
 
     resEyebrow.textContent = data.eyebrow
     resEyebrow.style.color = bandColor
@@ -1026,8 +990,7 @@ function updateAudit(): void {
     document.getElementById('res-score-line')!.textContent =
         'Process Defect Score: ' + total + ' / 15'
 
-    document.getElementById('res-description')!.textContent =
-        data.description
+    document.getElementById('res-description')!.textContent = data.description
 
     // Recommendations — rec numbers use band colour
 
@@ -1041,7 +1004,7 @@ function updateAudit(): void {
         <div class="rec-body">${r.body}</div>
       </div>
     </div>
-  `,
+  `
         )
         .join('')
 
@@ -1064,17 +1027,11 @@ function switchMode(mode: string): void {
         .getElementById('mode-calculator')!
         .classList.toggle('active', isCalc)
 
-    document
-        .getElementById('mode-audit')!
-        .classList.toggle('active', !isCalc)
+    document.getElementById('mode-audit')!.classList.toggle('active', !isCalc)
 
-    document
-        .getElementById('tab-calc')!
-        .classList.toggle('active', isCalc)
+    document.getElementById('tab-calc')!.classList.toggle('active', isCalc)
 
-    document
-        .getElementById('tab-audit')!
-        .classList.toggle('active', !isCalc)
+    document.getElementById('tab-audit')!.classList.toggle('active', !isCalc)
 }
 
 // ════════════════════════════════
