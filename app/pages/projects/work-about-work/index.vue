@@ -2,6 +2,7 @@
     <div>
         <header>
             <span class="logo">Work About Work</span>
+
             <div class="mode-tabs">
                 <button
                     id="tab-calc"
@@ -10,6 +11,7 @@
                 >
                     Calculator
                 </button>
+
                 <button
                     id="tab-audit"
                     class="mode-tab"
@@ -23,19 +25,24 @@
         <!-- ════════════════════════════════════════
          CALCULATOR MODE
          ════════════════════════════════════════ -->
+
         <div id="mode-calculator" class="mode-panel active">
             <!-- Left: inputs -->
+
             <div class="panel-left">
                 <div class="panel-left-heading">Your team</div>
 
                 <!-- team_size -->
+
                 <div class="slider-group">
                     <div class="slider-label-row">
                         <span class="slider-label">Team size</span>
-                        <span id="val-team-size" class="slider-value"
-                            >25 people</span
-                        >
+
+                        <span id="val-team-size" class="slider-value">
+                            25 people
+                        </span>
                     </div>
+
                     <input
                         id="sl-team-size"
                         type="range"
@@ -45,21 +52,25 @@
                         step="1"
                         oninput="updateCalc()"
                     >
+
                     <div class="slider-range-labels">
                         <span>3</span><span>500</span>
                     </div>
                 </div>
 
                 <!-- avg_salary -->
+
                 <div class="slider-group">
                     <div class="slider-label-row">
-                        <span class="slider-label"
-                            >Avg. fully-loaded salary</span
-                        >
-                        <span id="val-avg-salary" class="slider-value"
-                            >€80K / yr</span
-                        >
+                        <span class="slider-label">
+                            Avg. fully-loaded salary
+                        </span>
+
+                        <span id="val-avg-salary" class="slider-value">
+                            €80K / yr
+                        </span>
                     </div>
+
                     <input
                         id="sl-avg-salary"
                         type="range"
@@ -69,21 +80,25 @@
                         step="5000"
                         oninput="updateCalc()"
                     >
+
                     <div class="slider-range-labels">
                         <span>€30K</span><span>€300K</span>
                     </div>
                 </div>
 
                 <!-- admin_hrs -->
+
                 <div class="slider-group">
                     <div class="slider-label-row">
-                        <span class="slider-label"
-                            >Admin &amp; coordination load</span
-                        >
-                        <span id="val-admin-hrs" class="slider-value"
-                            >14 hrs / week</span
-                        >
+                        <span class="slider-label">
+                            Admin &amp; coordination load
+                        </span>
+
+                        <span id="val-admin-hrs" class="slider-value">
+                            14 hrs / week
+                        </span>
                     </div>
+
                     <input
                         id="sl-admin-hrs"
                         type="range"
@@ -93,21 +108,25 @@
                         step="1"
                         oninput="updateCalc()"
                     >
+
                     <div class="slider-range-labels">
                         <span>2 hrs</span><span>28 hrs</span>
                     </div>
                 </div>
 
                 <!-- adoption_pct -->
+
                 <div class="slider-group">
                     <div class="slider-label-row">
-                        <span class="slider-label"
-                            >AI workflow adoption rate</span
-                        >
-                        <span id="val-adoption-pct" class="slider-value"
-                            >50% of team</span
-                        >
+                        <span class="slider-label">
+                            AI workflow adoption rate
+                        </span>
+
+                        <span id="val-adoption-pct" class="slider-value">
+                            50% of team
+                        </span>
                     </div>
+
                     <input
                         id="sl-adoption-pct"
                         type="range"
@@ -117,85 +136,104 @@
                         step="1"
                         oninput="updateCalc()"
                     >
+
                     <div class="slider-range-labels">
                         <span>0%</span><span>100%</span>
                     </div>
                 </div>
 
                 <div class="cta-block">
-                    Want to understand <em>where</em> your coordination overhead
-                    comes from?
-                    <a onclick="switchMode('audit')"
-                        >Run the 5-question audit</a
-                    >
+                    Want to understand <em>where</em> your coordination
+                    overhead comes from?
+
+                    <a onclick="switchMode('audit')">
+                        Run the 5-question audit
+                    </a>
+
                     to identify your team's friction points and get targeted
                     recommendations.
                 </div>
             </div>
 
             <!-- Right: outputs -->
+
             <div class="panel-right">
                 <div class="headline-block">
                     <div class="output-eyebrow">
                         Annual cost of coordination overhead
                     </div>
+
                     <div id="out-admin-cost" class="headline-value">€700K</div>
                 </div>
 
                 <hr class="rule" >
 
                 <!-- 2x2 metric grid -->
+
                 <div class="metric-grid">
                     <div class="metric-cell">
-                        <div class="metric-cell-label">Hours lost per year</div>
+                        <div class="metric-cell-label">
+                            Hours lost per year
+                        </div>
+
                         <div
                             id="out-admin-hours"
                             class="metric-cell-value cost-val"
                         >
                             16.8K
                         </div>
+
                         <div class="metric-cell-note">
                             across the whole team
                         </div>
                     </div>
+
                     <div class="metric-cell">
                         <div class="metric-cell-label">
                             Hours per person / week
                         </div>
+
                         <div
                             id="out-hours-pp-week"
                             class="metric-cell-value cost-val"
                         >
                             14.0
                         </div>
+
                         <div class="metric-cell-note">
                             benchmark: 16.4 hrs (Microsoft / APQC)
                         </div>
                     </div>
+
                     <div class="metric-cell reclaim-cell">
                         <div class="metric-cell-label">
                             Reclaimable hours / yr
                         </div>
+
                         <div
                             id="out-reclaim-hours"
                             class="metric-cell-value reclaim-val"
                         >
                             5.0K
                         </div>
+
                         <div class="metric-cell-note">
                             with current AI adoption
                         </div>
                     </div>
+
                     <div class="metric-cell reclaim-cell">
                         <div class="metric-cell-label">
                             Value of reclaimed capacity
                         </div>
+
                         <div
                             id="out-reclaim-cost"
                             class="metric-cell-value reclaim-val"
                         >
                             €210K
                         </div>
+
                         <div class="metric-cell-note">
                             salary-equivalent per year
                         </div>
@@ -203,13 +241,16 @@
                 </div>
 
                 <!-- Admin load severity bar -->
+
                 <div class="bar-section">
                     <div class="bar-label-row">
                         <span class="bar-label">Admin load severity</span>
-                        <span id="bar-admin-label" class="bar-right-label"
-                            >14 hrs / week</span
-                        >
+
+                        <span id="bar-admin-label" class="bar-right-label">
+                            14 hrs / week
+                        </span>
                     </div>
+
                     <div class="bar-track">
                         <div
                             id="bar-admin-fill"
@@ -220,13 +261,16 @@
                 </div>
 
                 <!-- AI reclaim potential bar -->
+
                 <div class="bar-section">
                     <div class="bar-label-row">
                         <span class="bar-label">AI reclaim potential</span>
-                        <span id="bar-adopt-label" class="bar-right-label"
-                            >50%</span
-                        >
+
+                        <span id="bar-adopt-label" class="bar-right-label">
+                            50%
+                        </span>
                     </div>
+
                     <div class="bar-track">
                         <div
                             id="bar-adopt-fill"
@@ -241,8 +285,10 @@
         <!-- ════════════════════════════════════════
          AUDIT MODE
          ════════════════════════════════════════ -->
+
         <div id="mode-audit" class="mode-panel">
             <!-- Left: info + live score -->
+
             <div class="panel-left">
                 <div class="audit-info-heading">Diagnostic Audit</div>
 
@@ -251,6 +297,7 @@
                     team's coordination overhead is coming from and what to do
                     about it.
                 </p>
+
                 <p class="audit-intro-text">
                     Answer honestly. Each option is calibrated to a specific
                     process pattern. There is no neutral answer.
@@ -258,27 +305,44 @@
 
                 <p
                     class="audit-intro-text"
-                    style="font-weight: 700; color: #111; margin-bottom: 8px"
+                    style="
+                        font-weight: 700;
+                        color: #111;
+                        margin-bottom: 8px;
+                    "
                 >
                     Score bands:
                 </p>
 
                 <div class="band-indicator">
-                    <span class="band-chip chip-high">High Risk 10–15</span>
+                    <span class="band-chip chip-high">
+                        High Risk 10–15
+                    </span>
+
                     <span>Systemic redesign required.</span>
                 </div>
+
                 <div class="band-indicator">
-                    <span class="band-chip chip-moderate">Moderate 5–9</span>
+                    <span class="band-chip chip-moderate">
+                        Moderate 5–9
+                    </span>
+
                     <span>Targeted fixes in 2–3 dimensions.</span>
                 </div>
+
                 <div class="band-indicator">
-                    <span class="band-chip chip-healthy">Healthy 0–4</span>
+                    <span class="band-chip chip-healthy">
+                        Healthy 0–4
+                    </span>
+
                     <span>Optimise and protect what's working.</span>
                 </div>
 
                 <div class="live-score-box">
                     <div class="live-score-label">Process Defect Score</div>
+
                     <div id="live-score-val" class="live-score-number">—</div>
+
                     <div id="live-score-band" class="live-score-band">
                         Answer the questions to see your score
                     </div>
@@ -286,11 +350,13 @@
             </div>
 
             <!-- Right: questions + result -->
+
             <div class="panel-right">
                 <div style="max-width: 680px">
                     <div class="audit-right-heading">
                         Where does your team's time go?
                     </div>
+
                     <p class="audit-right-sub">
                         Select one answer per question. Your score updates in
                         real time. Recommendations appear once all five
@@ -298,12 +364,17 @@
                     </p>
 
                     <!-- Q1 -->
+
                     <div class="question-block">
-                        <div class="question-meta">Q1 — Meeting Design</div>
+                        <div class="question-meta">
+                            Q1 — Meeting Design
+                        </div>
+
                         <div class="question-text">
                             What best describes the majority of your team's
                             recurring meetings?
                         </div>
+
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
@@ -313,10 +384,12 @@
                                     value="0"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q1-0"
-                                    >Deep work sessions or workshops</label
-                                >
+
+                                <label class="option-label" for="q1-0">
+                                    Deep work sessions or workshops
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q1-1"
@@ -325,10 +398,12 @@
                                     value="1"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q1-1"
-                                    >Decision-making with clear owners</label
-                                >
+
+                                <label class="option-label" for="q1-1">
+                                    Decision-making with clear owners
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q1-2"
@@ -337,11 +412,13 @@
                                     value="2"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q1-2"
-                                    >Alignment meetings: getting everyone on the
-                                    same page</label
-                                >
+
+                                <label class="option-label" for="q1-2">
+                                    Alignment meetings: getting everyone on the
+                                    same page
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q1-3"
@@ -350,21 +427,26 @@
                                     value="3"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q1-3"
-                                    >Status updates: reporting what
-                                    happened</label
-                                >
+
+                                <label class="option-label" for="q1-3">
+                                    Status updates: reporting what happened
+                                </label>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Q2 -->
+
                     <div class="question-block">
-                        <div class="question-meta">Q2 — Meeting Structure</div>
+                        <div class="question-meta">
+                            Q2 — Meeting Structure
+                        </div>
+
                         <div class="question-text">
                             How often do meetings have a written agenda shared
                             in advance?
                         </div>
+
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
@@ -374,10 +456,12 @@
                                     value="0"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q2-0"
-                                    >Always: it's a team norm</label
-                                >
+
+                                <label class="option-label" for="q2-0">
+                                    Always: it's a team norm
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q2-1"
@@ -386,10 +470,12 @@
                                     value="1"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q2-1"
-                                    >Usually, but not consistently</label
-                                >
+
+                                <label class="option-label" for="q2-1">
+                                    Usually, but not consistently
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q2-2"
@@ -398,10 +484,12 @@
                                     value="2"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q2-2"
-                                    >Sometimes: for big meetings only</label
-                                >
+
+                                <label class="option-label" for="q2-2">
+                                    Sometimes: for big meetings only
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q2-3"
@@ -410,20 +498,26 @@
                                     value="3"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q2-3"
-                                    >Almost never</label
-                                >
+
+                                <label class="option-label" for="q2-3">
+                                    Almost never
+                                </label>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Q3 -->
+
                     <div class="question-block">
-                        <div class="question-meta">Q3 — Async Maturity</div>
+                        <div class="question-meta">
+                            Q3 — Async Maturity
+                        </div>
+
                         <div class="question-text">
                             Could the majority of your information-sharing
                             meetings be replaced by an async message instead?
                         </div>
+
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
@@ -433,11 +527,12 @@
                                     value="0"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q3-0"
-                                    >No: the live discussion adds real
-                                    value</label
-                                >
+
+                                <label class="option-label" for="q3-0">
+                                    No: the live discussion adds real value
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q3-1"
@@ -446,10 +541,12 @@
                                     value="1"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q3-1"
-                                    >Some, but not most</label
-                                >
+
+                                <label class="option-label" for="q3-1">
+                                    Some, but not most
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q3-2"
@@ -458,10 +555,12 @@
                                     value="2"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q3-2"
-                                    >Probably most of them</label
-                                >
+
+                                <label class="option-label" for="q3-2">
+                                    Probably most of them
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q3-3"
@@ -470,22 +569,26 @@
                                     value="3"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q3-3"
-                                    >Yes, almost all of them</label
-                                >
+
+                                <label class="option-label" for="q3-3">
+                                    Yes, almost all of them
+                                </label>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Q4 -->
+
                     <div class="question-block">
                         <div class="question-meta">
                             Q4 — Decision Architecture
                         </div>
+
                         <div class="question-text">
                             When you leave a meeting, how often is there a clear
                             owner and next action?
                         </div>
+
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
@@ -495,11 +598,12 @@
                                     value="0"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q4-0"
-                                    >Almost always: we have a clear
-                                    system</label
-                                >
+
+                                <label class="option-label" for="q4-0">
+                                    Almost always: we have a clear system
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q4-1"
@@ -508,11 +612,12 @@
                                     value="1"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q4-1"
-                                    >Usually, but follow-through is
-                                    inconsistent</label
-                                >
+
+                                <label class="option-label" for="q4-1">
+                                    Usually, but follow-through is inconsistent
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q4-2"
@@ -521,10 +626,12 @@
                                     value="2"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q4-2"
-                                    >Sometimes: varies by meeting</label
-                                >
+
+                                <label class="option-label" for="q4-2">
+                                    Sometimes: varies by meeting
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q4-3"
@@ -533,23 +640,27 @@
                                     value="3"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q4-3"
-                                    >Rarely: things feel discussed but not
-                                    decided</label
-                                >
+
+                                <label class="option-label" for="q4-3">
+                                    Rarely: things feel discussed but not
+                                    decided
+                                </label>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Q5 -->
+
                     <div class="question-block">
                         <div class="question-meta">
                             Q5 — AI and Workflow Maturity
                         </div>
+
                         <div class="question-text">
                             How is your team currently using AI tools to reduce
                             admin and coordination work?
                         </div>
+
                         <ul class="options-list">
                             <li class="option-item">
                                 <input
@@ -559,11 +670,12 @@
                                     value="0"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q5-0"
-                                    >We have consistent team-wide AI
-                                    workflows</label
-                                >
+
+                                <label class="option-label" for="q5-0">
+                                    We have consistent team-wide AI workflows
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q5-1"
@@ -572,11 +684,12 @@
                                     value="1"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q5-1"
-                                    >We have some shared workflows but no
-                                    system</label
-                                >
+
+                                <label class="option-label" for="q5-1">
+                                    We have some shared workflows but no system
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q5-2"
@@ -585,10 +698,12 @@
                                     value="2"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q5-2"
-                                    >A few individuals are experimenting</label
-                                >
+
+                                <label class="option-label" for="q5-2">
+                                    A few individuals are experimenting
+                                </label>
                             </li>
+
                             <li class="option-item">
                                 <input
                                     id="q5-3"
@@ -597,28 +712,35 @@
                                     value="3"
                                     onchange="updateAudit()"
                                 >
-                                <label class="option-label" for="q5-3"
-                                    >We are not using AI for this at all</label
-                                >
+
+                                <label class="option-label" for="q5-3">
+                                    We are not using AI for this at all
+                                </label>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Score result (revealed when all 5 answered) -->
+
                     <div id="score-result" class="score-result">
                         <div id="res-eyebrow" class="result-eyebrow"/>
+
                         <div id="res-title" class="result-title"/>
+
                         <div
                             id="res-score-line"
                             class="result-score-line"
                         />
+
                         <div
                             id="res-description"
                             class="result-description"
                         />
+
                         <div class="recs-header">
                             Your three recommendations
                         </div>
+
                         <div id="res-recs"/>
                     </div>
                 </div>
@@ -650,62 +772,95 @@ function fmtHours(v: number): string {
     return Math.round(v).toString()
 }
 
-function updateCalc() {
-    const ts = +(document.getElementById('sl-team-size') as HTMLInputElement)
-        .value
-    const sal = +(document.getElementById('sl-avg-salary') as HTMLInputElement)
-        .value
-    const ah = +(document.getElementById('sl-admin-hrs') as HTMLInputElement)
-        .value
-    const ap = +(document.getElementById('sl-adoption-pct') as HTMLInputElement)
-        .value
+function updateCalc(): void {
+    const ts = +(
+        document.getElementById('sl-team-size') as HTMLInputElement
+    ).value
+
+    const sal = +(
+        document.getElementById('sl-avg-salary') as HTMLInputElement
+    ).value
+
+    const ah = +(
+        document.getElementById('sl-admin-hrs') as HTMLInputElement
+    ).value
+
+    const ap = +(
+        document.getElementById('sl-adoption-pct') as HTMLInputElement
+    ).value
 
     // Slider display values
+
     document.getElementById('val-team-size')!.textContent = ts + ' people'
+
     document.getElementById('val-avg-salary')!.textContent =
         '€' + sal / 1000 + 'K / yr'
+
     document.getElementById('val-admin-hrs')!.textContent = ah + ' hrs / week'
+
     document.getElementById('val-adoption-pct')!.textContent = ap + '% of team'
 
     // Step 0
     const adminPct = (ah / HPW) * 100
+
     // Step 1
     const cph = sal / (HPW * WEEKS)
+
     // Step 2
     const totalHrs = ts * HPW * WEEKS
+
     // Step 3
     const adminHrs = totalHrs * (adminPct / 100)
+
     // Step 4
     const adminCost = adminHrs * cph
+
     // Step 5
     const hppw = adminHrs / ts / WEEKS
+
     // Step 6
     const reclaimHrs = adminHrs * (ap / 100) * 0.6
+
     // Step 7
     const reclaimCost = reclaimHrs * cph
 
     // Outputs
+
     document.getElementById('out-admin-cost')!.textContent =
         fmtCurrency(adminCost)
+
     document.getElementById('out-admin-hours')!.textContent = fmtHours(adminHrs)
+
     document.getElementById('out-hours-pp-week')!.textContent = hppw.toFixed(1)
+
     document.getElementById('out-reclaim-hours')!.textContent =
         fmtHours(reclaimHrs)
+
     document.getElementById('out-reclaim-cost')!.textContent =
         fmtCurrency(reclaimCost)
 
     // Admin bar
+
     document.getElementById('bar-admin-label')!.textContent = ah + ' hrs / week'
+
     const adminBarW = Math.min((adminPct / 70) * 100, 100)
-    const adminFill = document.getElementById('bar-admin-fill') as HTMLElement
+
+    const adminFill = document.getElementById(
+        'bar-admin-fill',
+    ) as HTMLElement
+
     adminFill.style.width = adminBarW + '%'
+
     adminFill.className =
         'bar-fill ' + (adminPct < 25 ? 'bar-green' : 'bar-magenta')
 
     // Adoption bar
+
     document.getElementById('bar-adopt-label')!.textContent = ap + '%'
-    ;(document.getElementById('bar-adopt-fill') as HTMLElement).style.width =
-        ap + '%'
+
+    ;(
+        document.getElementById('bar-adopt-fill') as HTMLElement
+    ).style.width = ap + '%'
 }
 
 // ════════════════════════════════
@@ -745,6 +900,7 @@ const RECS: Record<'high' | 'moderate' | 'healthy', RecBand> = {
             },
         ],
     },
+
     moderate: {
         eyebrow: 'Moderate',
         title: 'Moderate: 5–9',
@@ -765,6 +921,7 @@ const RECS: Record<'high' | 'moderate' | 'healthy', RecBand> = {
             },
         ],
     },
+
     healthy: {
         eyebrow: 'Healthy',
         title: 'Healthy: 0–4',
@@ -789,15 +946,21 @@ const RECS: Record<'high' | 'moderate' | 'healthy', RecBand> = {
 
 function getQ(name: string): number | null {
     const el = document.querySelector<HTMLInputElement>(
-        'input[name="' + name + '"]:checked'
+        'input[name="' + name + '"]:checked',
     )
+
     return el ? +el.value : null
 }
 
-function updateAudit() {
+function updateAudit(): void {
     const scores = ['q1', 'q2', 'q3', 'q4', 'q5'].map(getQ)
-    const filled = scores.filter((s): s is number => s !== null)
+
+    const filled = scores.filter(
+        (s): s is number => s !== null,
+    )
+
     const total = filled.reduce((a, b) => a + b, 0)
+
     const count = filled.length
 
     const lsv = document.getElementById('live-score-val')!
@@ -808,16 +971,19 @@ function updateAudit() {
         lsb.textContent = 'Answer the questions to see your score'
     } else {
         lsv.textContent = String(total)
+
         if (count < 5) {
             lsb.textContent = count + ' of 5 answered'
         } else {
             const band =
                 total <= 4 ? 'Healthy' : total <= 9 ? 'Moderate' : 'High Risk'
+
             lsb.textContent = band
         }
     }
 
     const result = document.getElementById('score-result')!
+
     if (count < 5) {
         result.classList.remove('visible')
         return
@@ -825,6 +991,7 @@ function updateAudit() {
 
     const key: 'high' | 'moderate' | 'healthy' =
         total <= 4 ? 'healthy' : total <= 9 ? 'moderate' : 'high'
+
     const data = RECS[key]
 
     const bandColor =
@@ -835,23 +1002,35 @@ function updateAudit() {
               : '#C4006A'
 
     // Live score number colour
-    ;(document.getElementById('live-score-val') as HTMLElement).style.color =
-        bandColor
+
+    ;(
+        document.getElementById('live-score-val') as HTMLElement
+    ).style.color = bandColor
 
     // Banner label + title
-    const resEyebrow = document.getElementById('res-eyebrow') as HTMLElement
+
+    const resEyebrow = document.getElementById(
+        'res-eyebrow',
+    ) as HTMLElement
+
     resEyebrow.textContent = data.eyebrow
     resEyebrow.style.color = bandColor
+
     const resTitle = document.getElementById('res-title') as HTMLElement
+
     resTitle.textContent = data.title
     resTitle.style.color = bandColor
 
     // Score line + description (#545454 per spec)
+
     document.getElementById('res-score-line')!.textContent =
         'Process Defect Score: ' + total + ' / 15'
-    document.getElementById('res-description')!.textContent = data.description
+
+    document.getElementById('res-description')!.textContent =
+        data.description
 
     // Recommendations — rec numbers use band colour
+
     document.getElementById('res-recs')!.innerHTML = data.recs
         .map(
             (r, i) => `
@@ -862,35 +1041,61 @@ function updateAudit() {
         <div class="rec-body">${r.body}</div>
       </div>
     </div>
-  `
+  `,
         )
         .join('')
 
     result.classList.add('visible')
-    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+
+    result.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+    })
 }
 
 // ════════════════════════════════
 // MODE SWITCHING
 // ════════════════════════════════
 
-function switchMode(mode: string) {
+function switchMode(mode: string): void {
     const isCalc = mode === 'calculator'
+
     document
         .getElementById('mode-calculator')!
         .classList.toggle('active', isCalc)
-    document.getElementById('mode-audit')!.classList.toggle('active', !isCalc)
-    document.getElementById('tab-calc')!.classList.toggle('active', isCalc)
-    document.getElementById('tab-audit')!.classList.toggle('active', !isCalc)
+
+    document
+        .getElementById('mode-audit')!
+        .classList.toggle('active', !isCalc)
+
+    document
+        .getElementById('tab-calc')!
+        .classList.toggle('active', isCalc)
+
+    document
+        .getElementById('tab-audit')!
+        .classList.toggle('active', !isCalc)
+}
+
+// ════════════════════════════════
+// TYPED WINDOW API
+// ════════════════════════════════
+
+interface WorkAboutWorkWindow extends Window {
+    updateCalc: () => void
+    updateAudit: () => void
+    switchMode: (mode: string) => void
 }
 
 onMounted(() => {
+    const workWindow = window as WorkAboutWorkWindow
+
     // Expose to window so the inline onclick/oninput/onchange attributes
     // in the template above (kept as-is from the original static HTML)
     // keep working exactly like before.
-    ;(window as any).updateCalc = updateCalc
-    ;(window as any).updateAudit = updateAudit
-    ;(window as any).switchMode = switchMode
+    workWindow.updateCalc = updateCalc
+    workWindow.updateAudit = updateAudit
+    workWindow.switchMode = switchMode
 
     // Initialise calculator with default values
     updateCalc()
@@ -915,6 +1120,7 @@ body {
 }
 
 /* ── Header ── */
+
 header {
     display: flex;
     align-items: center;
@@ -962,14 +1168,17 @@ header {
 }
 
 /* ── Mode panels ── */
+
 .mode-panel {
     display: none;
 }
+
 .mode-panel.active {
     display: flex;
 }
 
 /* ── Shared two-panel layout ── */
+
 .panel-left {
     width: 380px;
     min-width: 300px;
@@ -990,6 +1199,7 @@ header {
 }
 
 /* ── Sliders ── */
+
 .panel-left-heading {
     font-family: Georgia, serif;
     font-size: 18px;
@@ -1069,6 +1279,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 /* ── CTA block ── */
+
 .cta-block {
     margin-top: auto;
     padding-top: 24px;
@@ -1086,6 +1297,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 /* ── Calculator outputs ── */
+
 .headline-block {
     margin-bottom: 32px;
 }
@@ -1116,6 +1328,7 @@ hr.rule {
 }
 
 /* ── 2x2 metric grid ── */
+
 .metric-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1164,6 +1377,7 @@ hr.rule {
 .metric-cell-value.cost-val {
     color: #c4006a;
 }
+
 .metric-cell-value.reclaim-val {
     color: #006b2b;
 }
@@ -1176,6 +1390,7 @@ hr.rule {
 }
 
 /* ── Visual bars ── */
+
 .bar-section {
     margin-bottom: 18px;
 }
@@ -1221,11 +1436,13 @@ hr.rule {
 .bar-green {
     background: #006b2b;
 }
+
 .bar-magenta {
     background: #c4006a;
 }
 
 /* ── Audit left panel ── */
+
 .audit-info-heading {
     font-family: Georgia, serif;
     font-size: 18px;
@@ -1266,10 +1483,12 @@ hr.rule {
     background: #c4006a;
     color: #fff;
 }
+
 .chip-moderate {
     background: #e8779f;
     color: #fff;
 }
+
 .chip-healthy {
     background: #006b2b;
     color: #fff;
@@ -1309,6 +1528,7 @@ hr.rule {
 }
 
 /* ── Audit questions ── */
+
 .audit-right-heading {
     font-family: Georgia, serif;
     font-size: 24px;
@@ -1395,6 +1615,7 @@ hr.rule {
 }
 
 /* ── Score result panel ── */
+
 .score-result {
     display: none;
     margin-top: 36px;
@@ -1448,7 +1669,6 @@ hr.rule {
     letter-spacing: 0.5px;
     color: #888;
     margin-bottom: 18px;
-    padding-bottom: 10px;
     border-top: 1px solid #bbbbbb;
     padding-top: 18px;
 }
@@ -1485,6 +1705,7 @@ hr.rule {
 }
 
 /* ── Responsive ── */
+
 @media (max-width: 767px) {
     .mode-panel.active {
         flex-direction: column;
@@ -1506,9 +1727,11 @@ hr.rule {
     .headline-value {
         font-size: 44px;
     }
+
     header {
         padding: 12px 16px;
     }
+
     .metric-cell-value {
         font-size: 24px;
     }
