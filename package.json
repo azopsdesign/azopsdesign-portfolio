@@ -2,6 +2,10 @@
   "name": "azopsdesign-portfolio",
   "private": true,
   "type": "module",
+  "volta": {
+    "node": "24.21.0",
+    "npm": "11.19.0"
+  },  
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
