@@ -4,8 +4,8 @@ Portfolio Website based on Nuxt 4.
 
 ## Requirements
 
-- Node.js 20+ (Nuxt 4 requirement)
-- NPM
+- Node.js 24+ (Nuxt 4 requirement)
+- NPM 11.9+
 
 ## Setup
 
@@ -27,10 +27,6 @@ Nuxt 4 supports both rendering modes out of the box, no extra config needed
 — pick whichever you need per deploy:
 
 ```bash
-# Server build (Node server, SSR) — for platforms that run a Node process
-npm run build
-npm run preview   # or: node .output/server/index.mjs
-
 # Fully static build — for static hosting (Netlify, GitHub Pages, S3, etc.)
 npm run generate
 npm run preview   # serves .output/public
@@ -38,11 +34,9 @@ npm run preview   # serves .output/public
 
 ## TODO:
 
-- add Volta with node and npm version
-- update readme
+- add favicons
 - check assets
 - split code
-- add vs settings
-- add linter
-- add prettier
-- set navigation logic
+- set navigation logic between pages
+- seo
+- social info for pages
