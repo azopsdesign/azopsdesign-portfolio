@@ -34,7 +34,7 @@ npm run preview   # serves .output/public
 
 ## TODO:
 
-- update readme
+- add favicons
 - check assets
 - split code
 - set navigation logic between pages
