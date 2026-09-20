@@ -22,7 +22,6 @@
         "deploy": "npm run check-all && npm run generate"
     },
     "dependencies": {
-        "@trivago/prettier-plugin-sort-imports": "^6.0.2",
         "nuxt": "^4.5.2"
     },
     "devDependencies": {
@@ -32,6 +31,7 @@
         "eslint-config-prettier": "^10.1.1",
         "prettier": "^3.3.2",
         "typescript": "^5.9.3",
+        "@trivago/prettier-plugin-sort-imports": "^6.0.2",
         "vue-tsc": "^3.2.2"
     },
     "allowScripts": {
