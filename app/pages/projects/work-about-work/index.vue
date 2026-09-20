@@ -727,7 +727,30 @@
 
 <script setup lang="ts">
 useHead({
-    title: 'Work About Work',
+    title: 'Work About Work | Alessia Zordan | AZ · OpsDesign — Operations and Systems Design',
+    meta: [
+        {
+            name: 'description',
+            content: 'Project Work About Work',
+        },
+    ],
+    link: [
+        {
+            rel: 'icon',
+            type: 'image/svg+xml',
+            href: 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzQwIDM0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzQwIiBoZWlnaHQ9IjM0MCIgZmlsbD0iI0Y1RjNGMSIvPgogIDxyZWN0IHg9Ijk1IiB5PSI2NSIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIHJ4PSIyOCIgZmlsbD0iIzNDM0MzQiIvPgogIDxsaW5lIHgxPSI5NSIgeTE9IjE0MCIgeDI9IjEwNSIgeTI9IjE0MCIgc3Ryb2tlPSIjQzQwMDZBIiBzdHJva2Utd2lkdGg9IjIuOSIvPgogIDxsaW5lIHgxPSIxMTEiIHkxPSIxNDAiIHgyPSIxMjEiIHkyPSIxNDAiIHN0cm9rZT0iI0M0MDA2QSIgc3Ryb2tlLXdpZHRoPSIyLjkiLz4KICA8bGluZSB4MT0iMTI3IiB5MT0iMTQwIiB4Mj0iMTM3IiB5Mj0iMTQwIiBzdHJva2U9IiNDNDAwNkEiIHN0cm9rZS13aWR0aD0iMi45Ii8+CiAgPGxpbmUgeDE9IjE0MyIgeTE9IjE0MCIgeDI9IjE1MyIgeTI9IjE0MCIgc3Ryb2tlPSIjQzQwMDZBIiBzdHJva2Utd2lkdGg9IjIuOSIvPgogIDxjaXJjbGUgY3g9IjE3MCIgY3k9IjE0MCIgcj0iMTgiIGZpbGw9IiMzQzNDM0IiIHN0cm9rZT0iI0M0MDA2QSIgc3Ryb2tlLXdpZHRoPSIyLjkiLz4KICA8Y2lyY2xlIGN4PSIxNzAiIGN5PSIxNDAiIHI9IjEyIiBmaWxsPSIjQzQwMDZBIi8+Cjwvc3ZnPgo=',
+        },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        {
+            rel: 'preconnect',
+            href: 'https://fonts.gstatic.com',
+            crossorigin: '',
+        },
+        {
+            href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap',
+            rel: 'stylesheet',
+        },
+    ],
 })
 
 // ════════════════════════════════
