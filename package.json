@@ -33,5 +33,9 @@
         "prettier": "^3.3.2",
         "typescript": "^5.9.3",
         "vue-tsc": "^3.2.2"
+    },
+    "allowScripts": {
+        "unrs-resolver@1.12.2": true,
+        "esbuild@0.28.2": true
     }
 }
