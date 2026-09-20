@@ -28,7 +28,7 @@
     "devDependencies": {
         "@nuxt/eslint": "^1.17.0",
         "@types/node": "^24.13.6",
-        "eslint": "^9.22.0",
+        "eslint": "^10.0.0",
         "eslint-config-prettier": "^10.1.1",
         "prettier": "^3.3.2",
         "typescript": "^5.9.3",
@@ -36,6 +36,7 @@
     },
     "allowScripts": {
         "unrs-resolver@1.12.2": true,
-        "esbuild@0.28.2": true
+        "esbuild@0.28.2": true,
+        "fsevents@2.3.3": true
     }
 }
