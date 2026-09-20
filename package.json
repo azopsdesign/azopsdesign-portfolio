@@ -29,7 +29,7 @@
         "@nuxt/eslint": "^1.2.0",
         "eslint": "^9.22.0",
         "eslint-config-prettier": "^10.1.1",
-        "@types/node": "^22.13.11",
+        "@types/node": "^22.20.4",
         "prettier": "^3.3.2",
         "typescript": "^5.9.3",
         "vue-tsc": "^3.2.2"
