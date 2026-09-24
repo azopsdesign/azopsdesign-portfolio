@@ -112,6 +112,8 @@
             </div>
         </div>
 
+        <ProjectNav />
+
         <section class="about">
             <div class="wrap">
                 <h2 class="reveal">About</h2>
