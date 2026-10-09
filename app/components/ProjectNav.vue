@@ -22,7 +22,6 @@ const links = [{ label: 'Work About Work', to: '/projects/work-about-work' }]
 <style>
 .project-nav {
     border-top: 1px solid var(--color-greige);
-    background: rgba(207, 197, 186, 0.18);
 }
 
 .project-nav-inner {

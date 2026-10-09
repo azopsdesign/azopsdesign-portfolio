@@ -59,8 +59,6 @@
             </div>
         </section>
 
-        <ProjectNav />
-
         <section class="highlights">
             <div class="wrap">
                 <ul class="highlights-grid">
@@ -147,6 +145,8 @@
                 </ul>
             </div>
         </section>
+
+        <ProjectNav />
 
         <section class="credentials">
             <div class="wrap">
@@ -726,6 +726,7 @@ section.about {
 
 section.highlights {
     border-top: 1px solid var(--color-greige);
+    background: rgba(207, 197, 186, 0.18);
     text-align: center;
 }
 
@@ -810,6 +811,7 @@ section.highlights {
 /* ---------- Credentials ---------- */
 
 section.credentials {
+    border-top: 1px solid var(--color-greige);
     background: rgba(207, 197, 186, 0.18);
 }
 
