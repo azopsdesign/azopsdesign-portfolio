@@ -30,8 +30,6 @@
             </div>
         </div>
 
-        <ProjectNav />
-
         <section class="about">
             <div class="wrap">
                 <h2 class="reveal">About</h2>
@@ -60,6 +58,8 @@
                 </p>
             </div>
         </section>
+
+        <ProjectNav />
 
         <section class="highlights">
             <div class="wrap">

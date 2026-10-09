@@ -1,5 +1,5 @@
 <template>
-    <nav class="project-nav" aria-label="Projects">
+    <section class="project-nav">
         <div class="wrap project-nav-inner">
             <span class="project-nav-label">Projects</span>
             <NuxtLink
@@ -12,17 +12,17 @@
                 <span aria-hidden="true">&rarr;</span>
             </NuxtLink>
         </div>
-    </nav>
+    </section>
 </template>
 
 <script setup lang="ts">
 const links = [{ label: 'Work About Work', to: '/projects/work-about-work' }]
 </script>
 
-<style scoped>
+<style>
 .project-nav {
-    padding: var(--space-3) 0;
-    border-bottom: 1px solid var(--color-greige);
+    border-top: 1px solid var(--color-greige);
+    background: rgba(207, 197, 186, 0.18);
 }
 
 .project-nav-inner {
