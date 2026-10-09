@@ -85,6 +85,17 @@
                 />
             </svg>
         </NuxtLink>
+
+        <ul class="header-navigation-list">
+            <li class="header-navigation-list-item">
+                <NuxtLink to="/">Home</NuxtLink>
+            </li>
+            <li class="header-navigation-list-item">
+                <NuxtLink to="/projects/work-about-work">
+                    Work About Work
+                </NuxtLink>
+            </li>
+        </ul>
     </nav>
 </template>
 
@@ -92,20 +103,38 @@
 .header-navigation {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* margin-bottom: var(--space-5); */
+
     padding: 16px;
+    margin-left: -36px;
 }
 
 .hero-logo {
     width: 130px;
     animation: fadeUpIn 0.7s ease both;
     background-color: transparent;
+    /* background-color: pink; */
 }
 
 @media (min-width: 768px) {
     .hero-logo {
         width: 190px;
+    }
+}
+
+.header-navigation-list {
+    /* background-color: orange; */
+    z-index: 100;
+    position: relative;
+    margin-left: -16px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header-navigation-list-item {
+    margin-left: 16px;
+    &:first-child {
+        margin-left: 0;
     }
 }
 </style>
