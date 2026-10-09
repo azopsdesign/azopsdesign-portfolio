@@ -594,14 +594,12 @@ a:hover {
 /* ---------- Header / Hero ---------- */
 
 header.hero {
-    padding-top: var(--space-6);
     padding-bottom: var(--space-5);
     text-align: center;
 }
 
 @media (min-width: 768px) {
     header.hero {
-        padding-top: var(--space-7);
         padding-bottom: var(--space-6);
     }
 }
