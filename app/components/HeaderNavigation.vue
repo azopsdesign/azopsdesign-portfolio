@@ -1,5 +1,5 @@
 <template>
-    <nav class="navigation">
+    <nav class="header-navigation">
         <NuxtLink to="/">
             <svg
                 class="hero-logo"
@@ -89,7 +89,7 @@
 </template>
 
 <style>
-.navigation {
+.header-navigation {
     display: flex;
     align-items: center;
     justify-content: center;
