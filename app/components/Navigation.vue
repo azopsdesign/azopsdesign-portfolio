@@ -85,26 +85,15 @@
                 />
             </svg>
         </NuxtLink>
-
-        <ul class="navigation-list">
-            <li class="navigation-list-item">
-                <NuxtLink to="/">Home</NuxtLink>
-            </li>
-            <li class="navigation-list-item">
-                <NuxtLink to="/projects/work-about-work">
-                    Work About Work
-                </NuxtLink>
-            </li>
-        </ul>
     </nav>
 </template>
 
 <style>
 .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--space-5);
+    justify-content: center;
+    /* margin-bottom: var(--space-5); */
     padding: 16px;
 }
 
@@ -112,28 +101,11 @@
     width: 130px;
     animation: fadeUpIn 0.7s ease both;
     background-color: transparent;
-    /* for alignment on page */
-    margin-left: -36px;
 }
 
 @media (min-width: 768px) {
     .hero-logo {
         width: 190px;
-    }
-}
-
-.navigation-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation-list-item {
-    margin-left: var(--space-2);
-
-    &:first-child {
-        margin-left: 0;
     }
 }
 </style>
