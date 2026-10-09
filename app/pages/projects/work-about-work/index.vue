@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header>
+        <header class="page-header-work-about-work">
             <span class="logo">Work About Work</span>
 
             <div class="mode-tabs">
@@ -1103,7 +1103,7 @@ body {
 
 /* ── Header ── */
 
-header {
+.page-header-work-about-work {
     display: flex;
     align-items: center;
     justify-content: space-between;
